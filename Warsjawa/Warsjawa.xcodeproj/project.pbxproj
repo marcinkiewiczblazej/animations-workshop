@@ -18,6 +18,7 @@
 		38653764EA410AA05FB1AD69 /* the-sun-430992_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38653CEEF4CAFD0B32BB7F8A /* the-sun-430992_640.jpg */; };
 		386537F4C2A48AEBD5359DC3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653B2004C119636A4FE78A /* RootViewController.m */; };
 		3865383D6ADCE9E33156581D /* ProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653A5A3207156495EC5E50 /* ProgressLayer.m */; };
+		3865390C6A400EBC5C4C19E2 /* EasingAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653309852BD77120000EA1 /* EasingAnimation.m */; };
 		38653ACEE752804C6C49ABBD /* EasingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653538C36F518C589EAE68 /* EasingView.m */; };
 		38653AE138210C7ACD97EF43 /* EasingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653A170E26C7EE1EC1D849 /* EasingViewController.m */; };
 		38653AF703D17BAE2C0B94D7 /* RefreshTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653A02C231CE8E6F8EE229 /* RefreshTableViewCell.m */; };
@@ -46,6 +47,7 @@
 		3865328755C8329CAB52D4A9 /* SwapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwapViewController.m; sourceTree = "<group>"; };
 		386532D912939E5A427F0DC3 /* EasingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasingViewController.h; sourceTree = "<group>"; };
 		386532F4CE1D060FB4B44299 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		38653309852BD77120000EA1 /* EasingAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasingAnimation.m; sourceTree = "<group>"; };
 		38653319741F2E61B867C86C /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
 		3865337EE0D7A3602ABFC4AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		386533CD7D4E8428C2E0BF2A /* ProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressLayer.h; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		38653D29CC45E35BE7C1A4C7 /* RefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshViewController.h; sourceTree = "<group>"; };
 		38653D6EFE8BF4B38107AA22 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		38653D9779A8F18AF39FBF6A /* WarsjawaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarsjawaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38653E7AC7F26406B08B8CC7 /* EasingAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasingAnimation.h; sourceTree = "<group>"; };
 		38653EC5ED531FBCBB557F08 /* Warsjawa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warsjawa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38653F6E94055DDD92401EE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38653F7E090C6E25DF1D1A61 /* SwapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwapView.m; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				386532D912939E5A427F0DC3 /* EasingViewController.h */,
 				38653538C36F518C589EAE68 /* EasingView.m */,
 				38653CD04E76120121123434 /* EasingView.h */,
+				38653E7AC7F26406B08B8CC7 /* EasingAnimation.h */,
+				38653309852BD77120000EA1 /* EasingAnimation.m */,
 			);
 			path = Easing;
 			sourceTree = "<group>";
@@ -383,6 +388,7 @@
 				3865383D6ADCE9E33156581D /* ProgressLayer.m in Sources */,
 				38653AE138210C7ACD97EF43 /* EasingViewController.m in Sources */,
 				38653ACEE752804C6C49ABBD /* EasingView.m in Sources */,
+				3865390C6A400EBC5C4C19E2 /* EasingAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

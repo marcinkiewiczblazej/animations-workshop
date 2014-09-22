@@ -39,26 +39,44 @@
 }
 
 - (void)startAnimating {
-    [UIView animateKeyframesWithDuration:3.0f delay:0.f options:UIViewKeyframeAnimationOptionRepeat | UIViewKeyframeAnimationOptionCalculationModeCubic animations:^{
-        self.beachImageView.transform = CGAffineTransformIdentity;
-        self.sunImageView.transform = CGAffineTransformIdentity;
+    CGFloat duration = 3.f;
+    CGFloat angle = 0.10f;
 
-        [UIView addKeyframeWithRelativeStartTime:0.f relativeDuration:0.5f animations:^{
-            CGFloat angle = 0.10f;
+    CGFloat yOffset = -20.f;
+    CGFloat xOffset = 90.f;
 
-            CGFloat yOffset = 20.f;
-            CGFloat xOffset = 90.f;
+    CAAnimationGroup *sunGroupAnimation = [self animationForDuration:duration angle:angle center:self.sunImageView.center offset:CGPointMake(xOffset, yOffset) multiplier:1];
+    CAAnimationGroup *beachGroupAnimation = [self animationForDuration:duration angle:angle center:self.beachImageView.center offset:CGPointMake(xOffset, yOffset) multiplier:-1];
 
-            self.beachImageView.transform = CGAffineTransformConcat(CGAffineTransformMakeTranslation(xOffset, -yOffset), CGAffineTransformMakeRotation(angle));
-            self.sunImageView.transform = CGAffineTransformConcat(CGAffineTransformMakeTranslation(-xOffset, 0), CGAffineTransformMakeRotation(-angle));
-        }];
+    [self.beachImageView.layer addAnimation:beachGroupAnimation forKey:@"swap"];
+    [self.sunImageView.layer addAnimation:sunGroupAnimation forKey:@"swap"];
+}
 
-        [UIView addKeyframeWithRelativeStartTime:0.5f relativeDuration:0.5f animations:^{
+- (CAAnimationGroup *)animationForDuration:(CGFloat)duration angle:(CGFloat)angle center:(CGPoint)center offset:(CGPoint)offset multiplier:(int)multiplier {
+    CABasicAnimation *zPositionAnimation = [CABasicAnimation animation];
+    zPositionAnimation.keyPath = @"zPosition";
+    zPositionAnimation.fromValue = @(-1 * multiplier);
+    zPositionAnimation.toValue = @(1 * multiplier);
+    zPositionAnimation.duration = duration;
 
-            self.beachImageView.transform = CGAffineTransformIdentity;
-            self.sunImageView.transform = CGAffineTransformIdentity;
-        }];
-    } completion:nil];
+    CAKeyframeAnimation *positionAnimation = [CAKeyframeAnimation animation];
+    positionAnimation.keyPath = @"position";
+    positionAnimation.duration = duration;
+    positionAnimation.values = @[[NSValue valueWithCGPoint:center], [NSValue valueWithCGPoint:CGPointMake(offset.x * multiplier + center.x, offset.y * multiplier + center.y)], [NSValue valueWithCGPoint:center]];
+    positionAnimation.timingFunctions = @[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut], [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+
+    CAKeyframeAnimation *rotationAnimation = [CAKeyframeAnimation animation];
+    rotationAnimation.keyPath = @"transform.rotation";
+    rotationAnimation.duration = duration;
+    rotationAnimation.values = @[@0, @(angle * multiplier), @0];
+    rotationAnimation.timingFunctions = @[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut], [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+
+    CAAnimationGroup *group = [[CAAnimationGroup alloc] init];
+    group.animations = @[zPositionAnimation, rotationAnimation, positionAnimation];
+    group.duration = duration;
+    group.repeatCount = HUGE_VALF;
+
+    return group;
 }
 
 

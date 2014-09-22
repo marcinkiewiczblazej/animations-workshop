@@ -33,17 +33,15 @@ static NSString *const reuseIdentifier = @"reuseIdentifier";
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    [cell.imageView cancelImageRequestOperation];
-    cell.imageView.image = nil;
+    RefreshTableViewCell *refreshTableViewCell = (RefreshTableViewCell *)cell;
+    [refreshTableViewCell.imageV cancelImageRequestOperation];
+    refreshTableViewCell.imageV.image = [UIImage imageNamed:@"Placeholder.png"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[[NSURL alloc] initWithString:self.urls[(NSUInteger) indexPath.row]]];
     [request addValue:@"image/*" forHTTPHeaderField:@"Accept"];
 
-    RefreshTableViewCell *refreshTableViewCell = (RefreshTableViewCell *)cell;
     __weak RefreshTableViewCell *weakCell = refreshTableViewCell;
-    [refreshTableViewCell.imageV setImageWithURLRequest:request placeholderImage:[UIImage imageNamed:@"Placeholder.png"] success:^(NSURLRequest *req, NSHTTPURLResponse *response, UIImage *image) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            weakCell.imageV.image = image;
-        });
+    [refreshTableViewCell.imageV setImageWithURLRequest:request placeholderImage:nil success:^(NSURLRequest *req, NSHTTPURLResponse *response, UIImage *image) {
+            [weakCell animateImage:image];
     }                                           failure:nil];
 }
 
