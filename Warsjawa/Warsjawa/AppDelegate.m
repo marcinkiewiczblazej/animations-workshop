@@ -9,6 +9,7 @@
 
 #import "AppDelegate.h"
 #import "SwapViewController.h"
+#import "RootViewController.h"
 
 
 @interface AppDelegate ()
@@ -22,7 +23,7 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    self.window.rootViewController = [[SwapViewController alloc] init];
+    self.window.rootViewController = [[RootViewController alloc] init];
     [self.window makeKeyAndVisible];
 
     return YES;
