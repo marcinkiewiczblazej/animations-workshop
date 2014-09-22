@@ -8,13 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		38653007A0204BB98FA8B64C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3865337EE0D7A3602ABFC4AD /* AppDelegate.m */; };
+		386532872573375A0CB8F224 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 386532F4CE1D060FB4B44299 /* ProgressView.m */; };
+		386533E8307A26647DAE9D34 /* RefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653C26DF8CD0906C8C3E27 /* RefreshViewController.m */; };
 		386533FC9BB660DA3C15396B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653F6E94055DDD92401EE7 /* main.m */; };
+		38653526CA98D3EF7EF597AA /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653434AAEF32FA8682AD75 /* RootView.m */; };
 		386535E0C9B20FA0895A8289 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386537992F1CA7279659BDE7 /* Images.xcassets */; };
 		38653660FF6BCDB564EAEC22 /* Attribution.txt in Resources */ = {isa = PBXBuildFile; fileRef = 38653A9063D1A7D0A14BBB42 /* Attribution.txt */; };
 		386536A73DCE5EDC07989A14 /* beach-425167_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38653095E2DEA95DA3F3CBF4 /* beach-425167_640.jpg */; };
 		38653764EA410AA05FB1AD69 /* the-sun-430992_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38653CEEF4CAFD0B32BB7F8A /* the-sun-430992_640.jpg */; };
+		386537F4C2A48AEBD5359DC3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653B2004C119636A4FE78A /* RootViewController.m */; };
+		3865383D6ADCE9E33156581D /* ProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653A5A3207156495EC5E50 /* ProgressLayer.m */; };
+		38653ACEE752804C6C49ABBD /* EasingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653538C36F518C589EAE68 /* EasingView.m */; };
+		38653AE138210C7ACD97EF43 /* EasingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653A170E26C7EE1EC1D849 /* EasingViewController.m */; };
+		38653AF703D17BAE2C0B94D7 /* RefreshTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653A02C231CE8E6F8EE229 /* RefreshTableViewCell.m */; };
+		38653BA3A3F6919C94757044 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653B8C3C744B2D38A4D91D /* ProgressViewController.m */; };
+		38653BD6353CA35082C3628E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386537BF8C2A60FC7CEFCF48 /* MenuViewController.m */; };
 		38653D054C7B06BFBD8B6FB5 /* SwapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38653F7E090C6E25DF1D1A61 /* SwapView.m */; };
 		38653E2EF472A72815CC82AE /* SwapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3865328755C8329CAB52D4A9 /* SwapViewController.m */; };
+		38653F7865DD96DEC71832E4 /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 38653319741F2E61B867C86C /* Placeholder.png */; };
+		B558E3A230A194A3960BA05B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1985EE9F8DECB8E3C3AA2D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,17 +44,41 @@
 		38653162C6FA0EA5D8E0CA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		38653266B1E84D191D268C74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3865328755C8329CAB52D4A9 /* SwapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwapViewController.m; sourceTree = "<group>"; };
+		386532D912939E5A427F0DC3 /* EasingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasingViewController.h; sourceTree = "<group>"; };
+		386532F4CE1D060FB4B44299 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		38653319741F2E61B867C86C /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
 		3865337EE0D7A3602ABFC4AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		386533CD7D4E8428C2E0BF2A /* ProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressLayer.h; sourceTree = "<group>"; };
+		38653434AAEF32FA8682AD75 /* RootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
+		38653538C36F518C589EAE68 /* EasingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasingView.m; sourceTree = "<group>"; };
+		38653689262C63DF10D3BE6C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		386537992F1CA7279659BDE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		386537BF8C2A60FC7CEFCF48 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		386538EBBE295EA98B9348CB /* SwapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwapViewController.h; sourceTree = "<group>"; };
+		386538FEE8E5819B73D8E0ED /* RootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
+		386539F044D7AD5A3D8B8637 /* RefreshTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshTableViewCell.h; sourceTree = "<group>"; };
+		38653A02C231CE8E6F8EE229 /* RefreshTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshTableViewCell.m; sourceTree = "<group>"; };
+		38653A170E26C7EE1EC1D849 /* EasingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasingViewController.m; sourceTree = "<group>"; };
+		38653A5A3207156495EC5E50 /* ProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressLayer.m; sourceTree = "<group>"; };
 		38653A9063D1A7D0A14BBB42 /* Attribution.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Attribution.txt; sourceTree = "<group>"; };
+		38653B2004C119636A4FE78A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		38653B2A36BD0506603A071C /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		38653B8C3C744B2D38A4D91D /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
 		38653BAF3CC3340787052F59 /* SwapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwapView.h; sourceTree = "<group>"; };
+		38653C26DF8CD0906C8C3E27 /* RefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshViewController.m; sourceTree = "<group>"; };
+		38653CD04E76120121123434 /* EasingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasingView.h; sourceTree = "<group>"; };
 		38653CEEF4CAFD0B32BB7F8A /* the-sun-430992_640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "the-sun-430992_640.jpg"; sourceTree = "<group>"; };
+		38653D29CC45E35BE7C1A4C7 /* RefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshViewController.h; sourceTree = "<group>"; };
+		38653D6EFE8BF4B38107AA22 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		38653D9779A8F18AF39FBF6A /* WarsjawaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarsjawaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38653EC5ED531FBCBB557F08 /* Warsjawa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warsjawa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38653F6E94055DDD92401EE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38653F7E090C6E25DF1D1A61 /* SwapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwapView.m; sourceTree = "<group>"; };
+		38653F8B360F0C19332D68F3 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		3DD03B25706CAECC0AE71852 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		50165ED6260345D0589A5615 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		67C74CC219CF8E7700836D7B /* Warsjawa-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Warsjawa-prefix.pch"; sourceTree = "<group>"; };
+		7D1985EE9F8DECB8E3C3AA2D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B558E3A230A194A3960BA05B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +100,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32BE51DAD6D14CBBC4837C5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D1985EE9F8DECB8E3C3AA2D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		386532D6EBA386B2EE2662DF /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				38653B8C3C744B2D38A4D91D /* ProgressViewController.m */,
+				38653F8B360F0C19332D68F3 /* ProgressViewController.h */,
+				386532F4CE1D060FB4B44299 /* ProgressView.m */,
+				38653B2A36BD0506603A071C /* ProgressView.h */,
+				38653A5A3207156495EC5E50 /* ProgressLayer.m */,
+				386533CD7D4E8428C2E0BF2A /* ProgressLayer.h */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
 		386532F513FFC0D7A0EE6F93 /* Swap */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +132,15 @@
 			path = Swap;
 			sourceTree = "<group>";
 		};
+		38653567C667B3D4F4686D8F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				386537BF8C2A60FC7CEFCF48 /* MenuViewController.m */,
+				38653D6EFE8BF4B38107AA22 /* MenuViewController.h */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		38653726C8E5B6A1951CEE60 /* Warsjawa */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +150,24 @@
 				3865337EE0D7A3602ABFC4AD /* AppDelegate.m */,
 				386532F513FFC0D7A0EE6F93 /* Swap */,
 				38653F13BCDD64C06A41167A /* Resources */,
+				386537C26CB164867766182E /* Root */,
+				38653567C667B3D4F4686D8F /* Menu */,
+				38653FA6204EF5BE0BA21DD1 /* Refresh */,
+				386532D6EBA386B2EE2662DF /* Progress */,
+				38653976C3BBCBDCCD3946D8 /* Easing */,
 			);
 			path = Warsjawa;
+			sourceTree = "<group>";
+		};
+		386537C26CB164867766182E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				38653B2004C119636A4FE78A /* RootViewController.m */,
+				38653689262C63DF10D3BE6C /* RootViewController.h */,
+				38653434AAEF32FA8682AD75 /* RootView.m */,
+				386538FEE8E5819B73D8E0ED /* RootView.h */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		3865392D202F14BDB5EFB9A8 = {
@@ -92,7 +175,20 @@
 			children = (
 				38653E3A7EF2B1D6505D18BF /* Products */,
 				38653726C8E5B6A1951CEE60 /* Warsjawa */,
+				76A8A841031CD4BCDB4B62F2 /* Pods */,
+				32BE51DAD6D14CBBC4837C5D /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		38653976C3BBCBDCCD3946D8 /* Easing */ = {
+			isa = PBXGroup;
+			children = (
+				38653A170E26C7EE1EC1D849 /* EasingViewController.m */,
+				386532D912939E5A427F0DC3 /* EasingViewController.h */,
+				38653538C36F518C589EAE68 /* EasingView.m */,
+				38653CD04E76120121123434 /* EasingView.h */,
+			);
+			path = Easing;
 			sourceTree = "<group>";
 		};
 		38653E3A7EF2B1D6505D18BF /* Products */ = {
@@ -120,8 +216,29 @@
 				38653095E2DEA95DA3F3CBF4 /* beach-425167_640.jpg */,
 				38653CEEF4CAFD0B32BB7F8A /* the-sun-430992_640.jpg */,
 				38653A9063D1A7D0A14BBB42 /* Attribution.txt */,
+				38653319741F2E61B867C86C /* Placeholder.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		38653FA6204EF5BE0BA21DD1 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				38653C26DF8CD0906C8C3E27 /* RefreshViewController.m */,
+				38653D29CC45E35BE7C1A4C7 /* RefreshViewController.h */,
+				38653A02C231CE8E6F8EE229 /* RefreshTableViewCell.m */,
+				386539F044D7AD5A3D8B8637 /* RefreshTableViewCell.h */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		76A8A841031CD4BCDB4B62F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50165ED6260345D0589A5615 /* Pods.debug.xcconfig */,
+				3DD03B25706CAECC0AE71852 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38653C588C4B58ED9E7D80A7 /* Build configuration list for PBXNativeTarget "Warsjawa" */;
 			buildPhases = (
+				8CB3C11B0EB48555E19A0B13 /* Check Pods Manifest.lock */,
 				3865331807AA8BA38E85F45F /* Sources */,
 				386536836A1CB232743B2EBF /* Frameworks */,
 				38653028E7281CF735548CAC /* Resources */,
+				340D15E6A0F61FF02DE76F5A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +299,8 @@
 			mainGroup = 3865392D202F14BDB5EFB9A8;
 			productRefGroup = 38653E3A7EF2B1D6505D18BF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				38653F62B5E4943F0982A09D /* Warsjawa */,
@@ -197,6 +318,7 @@
 				386536A73DCE5EDC07989A14 /* beach-425167_640.jpg in Resources */,
 				38653764EA410AA05FB1AD69 /* the-sun-430992_640.jpg in Resources */,
 				38653660FF6BCDB564EAEC22 /* Attribution.txt in Resources */,
+				38653F7865DD96DEC71832E4 /* Placeholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +331,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		340D15E6A0F61FF02DE76F5A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CB3C11B0EB48555E19A0B13 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3865331807AA8BA38E85F45F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -218,6 +373,16 @@
 				38653007A0204BB98FA8B64C /* AppDelegate.m in Sources */,
 				38653E2EF472A72815CC82AE /* SwapViewController.m in Sources */,
 				38653D054C7B06BFBD8B6FB5 /* SwapView.m in Sources */,
+				386537F4C2A48AEBD5359DC3 /* RootViewController.m in Sources */,
+				38653BD6353CA35082C3628E /* MenuViewController.m in Sources */,
+				38653526CA98D3EF7EF597AA /* RootView.m in Sources */,
+				386533E8307A26647DAE9D34 /* RefreshViewController.m in Sources */,
+				38653AF703D17BAE2C0B94D7 /* RefreshTableViewCell.m in Sources */,
+				38653BA3A3F6919C94757044 /* ProgressViewController.m in Sources */,
+				386532872573375A0CB8F224 /* ProgressView.m in Sources */,
+				3865383D6ADCE9E33156581D /* ProgressLayer.m in Sources */,
+				38653AE138210C7ACD97EF43 /* EasingViewController.m in Sources */,
+				38653ACEE752804C6C49ABBD /* EasingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +497,7 @@
 		};
 		386537414136D32ECF0BEF53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50165ED6260345D0589A5615 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -340,11 +506,13 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
 		};
 		386538BC1C3CB39B64993D60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD03B25706CAECC0AE71852 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -353,6 +521,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;
 		};
